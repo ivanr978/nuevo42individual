@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de productos gastronómicos</title>
+
+
+  </head>
+  <body>
+    <h1>Formulario de productos gastronómicos</h1>
+    <form>
+      <fieldset>
+        <legend>Información del proveedor</legend>
+        <label for="nombre-proveedor">Nombre:</label>
+        <input type="text" id="nombre-proveedor" /><br />
+        <label for="email-proveedor">Email:</label>
+        <input type="email" id="email-proveedor" /><br />
+        <label for="telefono-proveedor">Teléfono:</label>
+        <input type="tel" id="telefono-proveedor" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Información del artículo</legend>
+        <label for="nombre-articulo">Nombre:</label>
+        <input type="text" id="nombre-articulo" /><br />
+        <label for="tipo">Tipo:</label>
+        <input type="text" id="tipo" /><br />
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" /><br />
+      </fieldset>
+      <button type="button" onclick="mostrarResultados()">Mostrar resultados</button>
+    </form>
+    <div id="resultados">
+      <p>Información del proveedor: <span id="info-proveedor"></span></p>
+      <p>Impuesto total a pagar: <span id="impuesto-total"></span></p>
+    </div>
+  <script src="main-compiled.js"></script>
+</body>
+</html>
